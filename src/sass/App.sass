@@ -1,0 +1,146 @@
+@import variables/variables
+@import mixin/mixin
+*
+  margin: 0px
+  padding: 0px
+*:focus
+  outline: none
+a
+  text-decoration: none
+.App
+  background-image: url('/images/background-principal.png')
+  background-repeat: no-repeat
+  background-size: 100%
+  height: auto
+  padding-top: 3%
+  padding-bottom: 3%
+  width: 100%
+.contenedor
+  display: flex
+  height: auto
+  margin: auto 
+  width: 80%
+.box-formulario
+  @include bg-black
+  width: 45%
+  padding-top: 5%
+  padding-bottom: 5%
+.box-contacto
+  @include bg-black
+  background: $c-white
+  width: 55%
+
+.title
+  @include font-rage(32px)
+  color: $c-white
+
+// formulario
+
+.formulario-login
+  margin-left: 10%
+  width: 80%
+
+.formulario-login__box-input
+  margin-top: 5%
+
+.formulario-login__label
+  @include font-nunito(20px)
+  color: $c-white
+  line-height: 34px
+
+.formulario-login__input
+  @include font-nunito(18px)
+  background: transparent
+  border: none
+  border-bottom: solid 2px $c-white
+  color: $c-white
+  height: 32px
+  margin-top: 1%
+  width: 100% 
+.input-password
+  display: inline-flex
+.icono-eye
+  position: relative
+  color: $c-white
+  top: -30px
+  left: 90%
+  padding: .67rem .65rem
+
+.formulario-login__input:focus
+  outline: none
+
+.reset-password
+  @include font-nunito(20)
+  color: $c-white
+  line-height: 27px
+  padding-top: 2%
+
+.box_btn-entrar
+  text-align: center
+
+.btn-entrar
+  @include font-nunito(20px)
+  @include btn-principal($c-black,30px,$c-white,40px,50%)
+  border: none
+  filter: drop-shadow( -4px -4px 6px rgba(251, 251, 251, 0.05)) drop-shadow( 4px 4px 6px rgba(0, 0, 0, 0.25))
+  margin-top: 5%
+  line-height: 41px
+  cursor: pointer
+  transition: all 0.25s ease-out
+
+
+
+.elegir
+  @include font-nunito(30px)
+  width: 100%
+  text-align: center
+  color: $c-white
+  padding: 2% 0%
+
+.btn-registrarme
+  @include font-nunito(20px)
+  @include btn-principal($c-black,30px,$c-white,40px,50%)
+  border: none
+  margin: auto
+  line-height: 37px
+  text-align: center
+  border: solid 2px $c-white
+  transition: all 0.25s ease-out
+
+.contacto__box-ilustracion
+   text-align: center
+   width: 100%
+
+.iconDown
+  display: none
+  
+.contacto__ilustracion
+  margin-top: 10%
+  width: 60%
+
+.text-contacto
+  padding: 3% 10%
+
+.subtitle
+  @include font-rage(60px)
+  color: $c-black
+
+.lema
+  @include font-nunito(20px)
+  color: $c-black
+
+.btn-contactanos
+  @include btn-principal($c-white,30px,$c-black,50px,50%)
+  @include font-nunito(25px) 
+  line-height: 50px
+  text-align: center
+  border: solid 2px $c-black
+  margin-top: 5%
+  transition: all 0.25s ease-out 
+
+ 
+@import animaciones/animaciones
+
+// responsive
+@import movil/movil
+@import animaciones/animaciones-movil

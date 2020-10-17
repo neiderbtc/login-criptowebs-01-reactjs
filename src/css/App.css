@@ -1,0 +1,315 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  background-image: url("/images/background-principal.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: auto;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+}
+
+.contenedor {
+  display: flex;
+  height: auto;
+  margin: auto;
+  width: 80%;
+}
+
+.box-formulario {
+  background: rgba(0, 0, 0, 0.93);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  width: 45%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.box-contacto {
+  background: rgba(0, 0, 0, 0.93);
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+  background: #fbfbfb;
+  width: 55%;
+}
+
+.title {
+  font-family: 'Rage Italic';
+  font-weight: normal;
+  font-size: 32px;
+  color: #fbfbfb;
+}
+
+.formulario-login {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.formulario-login__box-input {
+  margin-top: 5%;
+}
+
+.formulario-login__label {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  color: #fbfbfb;
+  line-height: 34px;
+}
+
+.formulario-login__input {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #fbfbfb;
+  color: #fbfbfb;
+  height: 32px;
+  margin-top: 1%;
+  width: 100%;
+}
+
+.input-password {
+  display: inline-flex;
+}
+
+.icono-eye {
+  position: relative;
+  color: #fbfbfb;
+  top: -30px;
+  left: 90%;
+  padding: .67rem .65rem;
+}
+
+.formulario-login__input:focus {
+  outline: none;
+}
+
+.reset-password {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20;
+  color: #fbfbfb;
+  line-height: 27px;
+  padding-top: 2%;
+}
+
+.box_btn-entrar {
+  text-align: center;
+}
+
+.btn-entrar {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.93);
+  border-radius: 30px;
+  color: #fbfbfb;
+  height: 40px;
+  width: 50%;
+  border: none;
+  filter: drop-shadow(-4px -4px 6px rgba(251, 251, 251, 0.05)) drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
+  margin-top: 5%;
+  line-height: 41px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.elegir {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color: #fbfbfb;
+  padding: 2% 0%;
+}
+
+.btn-registrarme {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.93);
+  border-radius: 30px;
+  color: #fbfbfb;
+  height: 40px;
+  width: 50%;
+  border: none;
+  margin: auto;
+  line-height: 37px;
+  text-align: center;
+  border: solid 2px #fbfbfb;
+  transition: all 0.25s ease-out;
+}
+
+.contacto__box-ilustracion {
+  text-align: center;
+  width: 100%;
+}
+
+.iconDown {
+  display: none;
+}
+
+.contacto__ilustracion {
+  margin-top: 10%;
+  width: 60%;
+}
+
+.text-contacto {
+  padding: 3% 10%;
+}
+
+.subtitle {
+  font-family: 'Rage Italic';
+  font-weight: normal;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.93);
+}
+
+.lema {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.93);
+}
+
+.btn-contactanos {
+  background: #fbfbfb;
+  border-radius: 30px;
+  color: rgba(0, 0, 0, 0.93);
+  height: 50px;
+  width: 50%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 550;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  border: solid 2px rgba(0, 0, 0, 0.93);
+  margin-top: 5%;
+  transition: all 0.25s ease-out;
+}
+
+.btn-entrar:hover, .btn-registrarme:hover {
+  transform: translateY(5px);
+  background: #fbfbfb;
+  border-radius: 30px;
+  color: rgba(0, 0, 0, 0.93);
+  height: 50px;
+  width: 50%;
+}
+
+.btn-contactanos:hover {
+  transform: translateY(-5px);
+  background: rgba(0, 0, 0, 0.93);
+  border-radius: 30px;
+  color: #fbfbfb;
+  height: 50px;
+  width: 50%;
+}
+
+@media (max-width: 840px) {
+  .App {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-size: cover;
+  }
+  .contenedor {
+    margin-top: 20%;
+    width: 95%;
+    display: block;
+  }
+  .box-formulario {
+    border-radius: 10px;
+    height: 150%;
+    width: 100%;
+  }
+  .title {
+    font-family: 'Rage Italic';
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 10%;
+  }
+  .btn-entrar {
+    background: rgba(0, 0, 0, 0.93);
+    border-radius: 30px;
+    color: #fbfbfb;
+    height: 60px;
+    width: 80%;
+  }
+  .btn-registrarme {
+    background: rgba(0, 0, 0, 0.93);
+    border-radius: 30px;
+    color: #fbfbfb;
+    height: 60px;
+    width: 80%;
+    border: solid 2px #fbfbfb;
+    line-height: 60px;
+  }
+  .btn-contactanos {
+    background: #fbfbfb;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.93);
+    height: 50px;
+    width: 80%;
+  }
+  .formulario-login__box-input {
+    margin-top: 12%;
+  }
+  .box-contacto {
+    width: 100%;
+  }
+  .iconDown {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 10%;
+    padding-top: 5%;
+  }
+  .contacto__ilustracion {
+    margin-top: 10%;
+  }
+  .btn-contactanos {
+    margin: auto;
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 840px) {
+  .btn-entrar:hover, .btn-registrarme:hover {
+    transform: translateY(5px);
+    background: #fbfbfb;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.93);
+    height: 60px;
+    width: 80%;
+  }
+  .btn-contactanos:hover {
+    transform: translateY(-5px);
+    background: rgba(0, 0, 0, 0.93);
+    border-radius: 30px;
+    color: #fbfbfb;
+    height: 50px;
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=App.css.map */
