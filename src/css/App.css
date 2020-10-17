@@ -7,8 +7,8 @@
   outline: none;
 }
 
-a {
-  text-decoration: none;
+a, a:hover {
+  text-decoration: none !important;
 }
 
 .App {
@@ -284,6 +284,7 @@ a {
     font-size: 50px;
     margin-top: 10%;
     padding-top: 5%;
+    color: rgba(0, 0, 0, 0.93);
   }
   .contacto__ilustracion {
     margin-top: 10%;
