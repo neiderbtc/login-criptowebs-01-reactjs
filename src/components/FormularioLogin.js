@@ -26,7 +26,7 @@ const  FormularioLogin = () => {
                 </div>
                 <p className="elegir">ó</p>
                 <div className="box_btn-registrarme">
-                <a href="#" >  
+                <a href="/" >  
                     <div className="btn-registrarme">
                         Registrarme 
                     </div>

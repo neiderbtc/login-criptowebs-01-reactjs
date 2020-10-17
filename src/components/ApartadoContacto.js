@@ -10,12 +10,12 @@ const ApartadoContacto = () => {
         <>
         <a href="#iconDown"><div className="iconDown">{iconDown}</div></a>
         <div className="contacto__box-ilustracion">
-          <img className="contacto__ilustracion" src="/images/ilustracion.png"/>
+          <img className="contacto__ilustracion" alt="ilustracion login" src="/images/ilustracion.png"/>
           </div>
           <div className="text-contacto">
             <h2 className="subtitle">Criptowebs.com</h2>
             <h3 className="lema">Criptomonedas, diseño, desarrollo web.</h3>
-            <a href="#" >  
+            <a href="/" >  
               <div id="iconDown" className="btn-contactanos">
                 Contactanos
               </div>
